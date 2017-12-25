@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h4, h5, td, table, p, body div {
+    font-family: Press Start 2P,Verdana, Arial, Helvetica, serif;
+}
+.white { color:white;font-weight:900 }
+td
+{   color: Black;
+    font-size: 13px;
+}
+.pagetitle {
+    color: #ffffff;
+    background-color: #666699;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center
+}
+.title {
+    color: #001435; background-color: ; font-size: 25px; font-weight: 900;
+    text-align: center; border-width: 2px;
+}
+
+.panel {
+    font-size: 18px;
+    background-color: #666699;
+    color : #ffffff;
+}
+
+.chattername {
+    font-family:Press Start 2P,Arial,Tahoma,Verdana;
+    color:#940a7c;
+    font-size:18px
+}
+
+.error {
+    color : #FF3300;
+    font-weight : 700;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    font-family:Press Start 2P,Arial,Tahoma,Verdana;
+    font-size:16px;
+}
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#333399
+}
+a:hover {
+    text-decoration:underline;
+    color:#000000;
+}
+
+h2 {
+    font-size: 150%;
+    color: #000066;
+}
+h3 { font-size: 110%; color:#009966 }
+h4 { font-size: 100%; color:#330099 }

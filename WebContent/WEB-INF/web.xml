@@ -1,0 +1,79 @@
+<web-app>
+
+    <display-name>bin data</display-name>
+    <description>This is a small web chat Application</description>
+
+    <context-param>
+        <param-name>chatpropertyfile</param-name>
+        <param-value>chat.properties</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>adminEmail</param-name>
+        <param-value>yacharenikrishnakanth@outlook.com</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>sessionTimeout</param-name>
+        <param-value>30</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>refreshAfter</param-name>
+        <param-value>3</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>maxNoOfMessages</param-name>
+        <param-value>20</param-value>
+    </context-param>
+    <listener>
+        <listener-class>krishna.bean.SessionListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>krishna.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manageChat</servlet-name>
+        <servlet-class>krishna.servlet.ManageChatServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>saveInfo</servlet-name>
+        <servlet-class>krishna.servlet.SaveInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>manageChat</servlet-name>
+        <url-pattern>/servlet/manageChat</url-pattern>
+
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/servlet/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>saveInfo</servlet-name>
+        <url-pattern>/servlet/saveInfo</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+        <welcome-file>login.html</welcome-file>
+        <welcome-file>login.htm</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+
+</web-app>
