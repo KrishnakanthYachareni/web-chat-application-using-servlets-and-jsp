@@ -10,7 +10,7 @@ Email			:yacharenikrishnakanth@outlook.com
 
 Hope you will enjoy.....
 Thank you
-***HAPPY LEARNING!***
+HAPPY LEARNING!
 
 © Copyright 2017 **Krishnakanth Yachareni**
 
